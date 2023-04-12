@@ -4,6 +4,8 @@ import { NavBar } from './components/NavBar'
 import { Banner } from './components/Banner'
 import { Skills } from './components/Skills'
 import { Footer } from './components/Footer'
+// import { Contact } from './components/Contact'
+import { Contact } from './components/ContactFromVideo'
 
 function App() {
   return (
@@ -11,6 +13,7 @@ function App() {
       <NavBar />
       <Banner />
       <Skills />
+      <Contact />
       <Footer />
     </div>
   )

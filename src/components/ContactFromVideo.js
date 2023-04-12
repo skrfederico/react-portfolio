@@ -70,7 +70,24 @@ export const Contact = () => {
                   <h2 className=" capitalize">
                     Reach out or contact me on my socials
                   </h2>
-                  <form
+
+                  <form action="/send_email" method="post">
+                    <label for="email">From:</label>
+                    <input type="email" name="from" id="from" />
+
+                    {/* <label for="to">To:</label>
+                    <input type="email" name="to" id="to" /> */}
+
+                    <label for="subject">Subject:</label>
+                    <input type="text" name="subject" id="subject" />
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message"></textarea>
+
+                    <input type="submit" value="Send" />
+                  </form>
+
+                  {/* <form
                     onSubmit={handleSubmit}
                     method="POST"
                     action={process.env.REACT_EMAIL_KEY}
@@ -122,7 +139,7 @@ export const Contact = () => {
                         </button>
                       </Col>
                     </Row>
-                  </form>
+                  </form> */}
                 </div>
               )}
             </TrackVisibility>
@@ -132,82 +149,3 @@ export const Contact = () => {
     </section>
   )
 }
-
-// import './contact.css'
-
-// import React, { useRef, useState } from 'react'
-
-// import { MdOutlineEmail } from 'react-icons/md'
-// // import emailjs from '@emailjs/browser'
-
-// export const Contact = () => {
-//   const [message, setMessage] = useState(false)
-//   const formRef = useRef()
-//   const handleSubmit = (e) => {
-//     e.preventDefault()
-//     setMessage(true)
-//       // emailjs
-//       .sendForm(
-//         'service_k2qawqh',
-//         'template_c6rkpn6',
-//         formRef.current,
-//         'X7K7ebhIeOy3YwHki'
-//       )
-//       .then(
-//         (result) => {
-//           console.log(result.text)
-//         },
-//         (error) => {
-//           console.log(error.text)
-//         }
-//       )
-
-//     e.target.reset()
-//   }
-//   return (
-//     <section id="contact">
-//       <h5>Get In Touch</h5>
-//       <h5>
-//         I do receive your messages and will respond asap if the valid email is
-//         provided :)
-//       </h5>
-//       <h2>Contact Me</h2>
-//       <div className="container contact__container">
-//         <div className="contact__options">
-//           <article className="contact__option">
-//             <MdOutlineEmail className="contact__option-icon" />
-//             <h4>Email</h4>
-//             <h5>skrfederico@gmail.com</h5>
-//             <a href="mailto:skrfederico@gmail.com">Send a message</a>
-//           </article>
-//         </div>
-//         <form ref={formRef} onSubmit={handleSubmit}>
-//           <input
-//             type="text"
-//             placeholder="Your Full Name"
-//             name="user_name"
-//             required
-//           />
-//           <input
-//             type="text"
-//             placeholder="Your Email"
-//             name="user_email"
-//             required
-//           />
-//           <textarea
-//             placeholder="Your message"
-//             rows="7"
-//             name="message"
-//             required
-//           ></textarea>
-//           <button type="submit" className="btn btn-primary">
-//             Send Message
-//           </button>
-//           {message && <span>Thanks, I'll reply ASAP :)</span>}
-//         </form>
-//       </div>
-//     </section>
-//   )
-// }
-
-// export default Contact
