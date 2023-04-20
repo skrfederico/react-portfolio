@@ -70,6 +70,7 @@ export const Contact = () => {
                   <h2 className=" capitalize">
                     Reach out or contact me on my socials
                   </h2>
+                  {/* // */}
                   <form
                     onSubmit={handleSubmit}
                     method="POST"
@@ -123,6 +124,7 @@ export const Contact = () => {
                       </Col>
                     </Row>
                   </form>
+                  {/* // */}
                 </div>
               )}
             </TrackVisibility>

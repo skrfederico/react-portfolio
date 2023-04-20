@@ -8,17 +8,19 @@ import { useEffect } from 'react'
 
 export const Contact = () => {
   const formInitialDetails = {
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
+    // firstName: '',
+    // lastName: '',
+    // email: '',
+    // phone: '',
+    from: '',
+    subject: '',
     message: ''
   }
   const [formDetails, setFormDetails] = useState(formInitialDetails)
   const [buttonText, setButtonText] = useState('Send')
   const [loading, setLoading] = useState(false)
 
-  const [state, handleSubmit] = useForm('xoqzayob')
+  // const [state, handleSubmit] = useForm('xoqzayob')
 
   const onFormUpdate = (category, value) => {
     setFormDetails({
@@ -71,20 +73,13 @@ export const Contact = () => {
                     Reach out or contact me on my socials
                   </h2>
 
-                  <form action="/send_email" method="post">
-                    <label for="email">From:</label>
-                    <input type="email" name="from" id="from" />
-
-                    {/* <label for="to">To:</label>
-                    <input type="email" name="to" id="to" /> */}
-
-                    <label for="subject">Subject:</label>
-                    <input type="text" name="subject" id="subject" />
-
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message"></textarea>
-
-                    <input type="submit" value="Send" />
+                  <form
+                    action="https://formsubmit.co/skrfederico@gmail.com"
+                    method="POST"
+                  >
+                    <input type="text" name="name" required />
+                    <input type="email" name="email" required />
+                    <button type="submit">Send</button>
                   </form>
 
                   {/* <form

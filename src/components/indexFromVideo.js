@@ -18,10 +18,7 @@ app.get('/', function (req, res) {
 })
 
 app.post('/send_email', function () {
-  var from = req.body.from
-  var to = req.body.to
-  var subject = req.body.subject
-  var message = req.body.message
+  const { from, to, subject, message } = req.body
 
   var transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -40,10 +37,12 @@ app.post('/send_email', function () {
   transporter.sendMail(mailOptions, function (error, info) {
     if (error) {
       console.log(error)
+      res.status(400).json({ message: error.message })
     } else {
       console.log('email send' + info.response)
+      res.status(200).json({ message: 'sent ok' })
     }
-    response.redirect('/')
+    // response.redirect('/')
   })
 })
 

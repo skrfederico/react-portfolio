@@ -5,12 +5,24 @@ import colorSharp2 from '../assets/img/color-sharp2.png'
 import 'animate.css'
 import TrackVisibility from 'react-on-screen'
 
+import ploggerIndex from '../assets/img/ploggerIndex.png'
+import ploggerForm from '../assets/img/ploggerForm.png'
+import ploggerPhonelog from '../assets/img/ploggerPhonelog.png'
+
+import movieAppMovieTop from '../assets/img/movieAppMovieTop.png'
+import movieAppMovieBottom from '../assets/img/movieAppMovieBottom.png'
+import movieAppReviews from '../assets/img/movieAppReviews.png'
+
+import teachAidGroups from '../assets/img/teachAidGroups.png'
+import teachAidRateStudents from '../assets/img/teachAidRateStudents.png'
+import teachAidAverages from '../assets/img/teachAidAverages.png'
+import teachAidReports from '../assets/img/teachAidReports.png'
+
 import Illustration from '../assets/img/try.png'
 import speechBubble from '../assets/img/image.png'
 import github from '../assets/img/icons8-github.svg'
 import web from '../assets/img/web.png'
 
-import airbnb from '../assets/img/airbnb.png'
 // slick css
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
@@ -22,7 +34,8 @@ import { ExternalLink } from 'react-external-link'
 import { BsGithub } from 'react-icons/bs'
 import { BsGlobe } from 'react-icons/bs'
 import { Tooltip as ReactTooltip } from 'react-tooltip'
-import '../../node_modules/react-tooltip/dist/react-tooltip.css'
+// import '../../node_modules/react-tooltip/dist/react-tooltip.css'
+// import '../../node_modules/react-tooltip/dist/'
 
 export const Projects = () => {
   const projects1 = [
@@ -80,7 +93,7 @@ export const Projects = () => {
                         <Nav.Link eventKey="second">MOVIES_REVIEWS</Nav.Link>
                       </Nav.Item>
                       <Nav.Item className="cursor-pointer">
-                        <Nav.Link eventKey="third">VLOGGER</Nav.Link>
+                        <Nav.Link eventKey="third">PLOGGER</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content
@@ -93,16 +106,22 @@ export const Projects = () => {
                         <Row>
                           <div>
                             <Slider {...settings}>
-                              {/* <img src={airbnbHome} className=" rounded-xl mb-8" />
-                              <img src={airbnb3} className=" rounded-xl mb-8" />
-                              <img src={airbnbSearch} className=" rounded-xl mb-8" />
-                              <img src={search1} className=" rounded-xl mb-8" />
-                              <img src={search2} className=" rounded-xl mb-8" />
-
-                              <img src={airbnbPlaceDetail} className=" rounded-xl mb-8" />
-                              <img src={airbnb4} className=" rounded-xl mb-8" />
-
-                              <img src={airbnbCheckout} className=" rounded-xl mb-8" /> */}
+                              <img
+                                src={teachAidGroups}
+                                className=" rounded-xl mb-8"
+                              />
+                              <img
+                                src={teachAidRateStudents}
+                                className=" rounded-xl mb-8"
+                              />
+                              <img
+                                src={teachAidAverages}
+                                className=" rounded-xl mb-8"
+                              />
+                              <img
+                                src={teachAidReports}
+                                className=" rounded-xl mb-8"
+                              />
                             </Slider>
 
                             <div className="flex justify-center ccc">
@@ -166,14 +185,18 @@ export const Projects = () => {
                         <Row>
                           <div>
                             <Slider {...settings}>
-                              {/* <img src={ecom1} className=" rounded-xl mb-8" />
-                              <img src={ecom2} className=" rounded-xl mb-8" />
-                              <img src={ecom3} className=" rounded-xl mb-8" />
-                              <img src={ecom} className=" rounded-xl mb-8" />
-                              <img src={ecom4} className=" rounded-xl mb-8" />
-                              <img src={ecom5} className=" rounded-xl mb-8" />
-                              <img src={ecom6} className=" rounded-xl mb-8" />
-                              <img src={ecom7} className=" rounded-xl mb-8" /> */}
+                              <img
+                                src={movieAppMovieTop}
+                                className=" rounded-xl mb-8"
+                              />
+                              <img
+                                src={movieAppMovieBottom}
+                                className=" rounded-xl mb-8"
+                              />
+                              <img
+                                src={movieAppReviews}
+                                className=" rounded-xl mb-8"
+                              />
                             </Slider>
 
                             <div className="flex justify-center ccc">
@@ -241,17 +264,18 @@ export const Projects = () => {
                         <Row>
                           <div>
                             <Slider {...settings}>
-                              {/* <img src={netflix1} className=" rounded-xl mb-8" />
-                              <img src={netflix2} className=" rounded-xl mb-8" />
-                              <img src={netflix3} className=" rounded-xl mb-8" />
-                              <img src={netflix4} className=" rounded-xl mb-8" />
-                              <img src={netflix5} className=" rounded-xl mb-8" />
-                              <img src={netflix6} className=" rounded-xl mb-8" />
-                              <img src={netflix7} className=" rounded-xl mb-8" />
-                              <img src={netflix8} className=" rounded-xl mb-8" />
-                              <img src={netflix9} className=" rounded-xl mb-8" />
-                              <img src={netflix10} className=" rounded-xl mb-8" />
-                              <img src={netflix11} className=" rounded-xl mb-8" /> */}
+                              <img
+                                src={ploggerIndex}
+                                className=" rounded-xl mb-8"
+                              />
+                              <img
+                                src={ploggerForm}
+                                className=" rounded-xl mb-8"
+                              />
+                              <img
+                                src={ploggerPhonelog}
+                                className=" rounded-xl mb-8"
+                              />
                             </Slider>
 
                             <div className="flex justify-center ccc">
