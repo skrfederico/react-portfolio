@@ -77,16 +77,6 @@ export const Contact = () => {
                     action="https://formsubmit.co/skrfederico@gmail.com"
                     method="POST"
                   >
-                    <input type="text" name="name" required />
-                    <input type="email" name="email" required />
-                    <button type="submit">Send</button>
-                  </form>
-
-                  {/* <form
-                    onSubmit={handleSubmit}
-                    method="POST"
-                    action={process.env.REACT_EMAIL_KEY}
-                  >
                     <Row>
                       <Col size={12} sm={6} className="px-1">
                         <input
@@ -99,7 +89,6 @@ export const Contact = () => {
                           }
                         />
                       </Col>
-
                       <Col size={12} sm={6} className="px-1">
                         <input
                           id="email"
@@ -114,7 +103,6 @@ export const Contact = () => {
                           }
                         />
                       </Col>
-
                       <Col size={12} className="px-1">
                         <textarea
                           rows="6"
@@ -126,7 +114,6 @@ export const Contact = () => {
                             onFormUpdate('message', e.target.value)
                           }
                         ></textarea>
-
                         <button type="submit" onClick={loadingHandler}>
                           <span>
                             {loading === true ? 'Sending...' : 'Send'}
@@ -134,7 +121,7 @@ export const Contact = () => {
                         </button>
                       </Col>
                     </Row>
-                  </form> */}
+                  </form>
                 </div>
               )}
             </TrackVisibility>

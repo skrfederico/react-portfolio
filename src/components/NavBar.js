@@ -3,7 +3,6 @@ import { Navbar, Nav, Container } from 'react-bootstrap'
 import logo from '../assets/img/logo.svg'
 import Linkedin from '../assets/img/nav-icon1.svg'
 import github from '../assets/img/icons8-github.svg'
-import GovindLogo from '../assets/img/logoo.gif'
 
 import { HashLink } from 'react-router-hash-link'
 import { BrowserRouter as Router } from 'react-router-dom'

@@ -71,12 +71,11 @@ export const Projects = () => {
 
                   <div className="leverageHold">
                     <p className=" capitalize o">
-                      "Creating leverage should be the first priority of every
-                      Homosapien. that leverage can be anything leverage of
-                      time, leverage of money, leverage of skills, or even
-                      leverage of your team. As it is the same leverage that can
-                      put you way ahead of your competitors" - A lesson from my
-                      trading journey.
+                      ""The first rule of any technology used in a business is
+                      that automation applied to an efficient operation will
+                      magnify the efficiency. The second is that automation
+                      applied to an inefficient operation will magnify the
+                      inefficiency." - Bill Gates.
                     </p>
                   </div>
 
@@ -87,13 +86,13 @@ export const Projects = () => {
                       id="pills-tab"
                     >
                       <Nav.Item className="cursor-pointer">
-                        <Nav.Link eventKey="first">TEACHER'S_ASSIST</Nav.Link>
+                        <Nav.Link eventKey="first">Teacher's Aid</Nav.Link>
                       </Nav.Item>
                       <Nav.Item className="cursor-pointer">
-                        <Nav.Link eventKey="second">MOVIES_REVIEWS</Nav.Link>
+                        <Nav.Link eventKey="second">Movies Reviews</Nav.Link>
                       </Nav.Item>
                       <Nav.Item className="cursor-pointer">
-                        <Nav.Link eventKey="third">PLOGGER</Nav.Link>
+                        <Nav.Link eventKey="third">P(hone)LOGGER</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content
@@ -288,7 +287,7 @@ export const Projects = () => {
                                 <p className=" capitalize projectIntro">
                                   "Vlogger is my first CRUD app{' '}
                                   <ExternalLink
-                                    href="https://github.com/Govind783"
+                                    href="https://github.com/skrfederico"
                                     className="text-yellow-400 hover:text-yellow-500 uppercase"
                                   >
                                     {' '}
@@ -316,14 +315,14 @@ export const Projects = () => {
                             />
 
                             <div className="flex gap-6 relative bubbleContentHold">
-                              <ExternalLink href="https://github.com/Govind783/netflix-clone">
+                              <ExternalLink href="https://github.com/skrfederico/teachers_assistant">
                                 <BsGithub
                                   className=" inline-block white text-3xl"
                                   id="github3"
                                 />
                               </ExternalLink>
 
-                              <ExternalLink href="https://govinds-project.netlify.app/">
+                              <ExternalLink href="https://skrfederico-project.netlify.app/">
                                 <BsGlobe
                                   className=" white text-3xl inline-block"
                                   id="live3"

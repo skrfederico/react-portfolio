@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
+import undraw_programming from '../assets/img/undraw_programming.svg'
 // import headerImg from '../assets/img/header-img.svg'
-import headerImg from '../assets/img/header-img.svg'
 
 import { ArrowRightCircle } from 'react-bootstrap-icons'
 import 'animate.css'
@@ -16,8 +16,8 @@ export const Banner = () => {
   const [index, setIndex] = useState(1)
   const toRotate = [
     'a Web Developer',
-    'a bilingual (Spa-Eng) educator',
-    'a Content Creator'
+    'a Product Manager',
+    'a bilingual (Spa-Eng) educator'
   ]
   const period = 100
 
@@ -82,11 +82,13 @@ export const Banner = () => {
                     </span>
                   </h1>
                   <p className=" capitalize">
-                    Hola 👋 I'm a full stack web developer specialized in react.
-                    I'm always learning about new technologies, how to implement
-                    them and create more effective processes . Last but not
-                    least I have more than 17 years of experience in the
-                    education field.
+                    Hola 👋 I am a full-stack web developer with a
+                    specialization in React. I am constantly expanding my
+                    knowledge of new technologies and exploring ways to
+                    implement them effectively. With over 17 years of experience
+                    in the education industry, I bring a unique perspective to
+                    my work and strive to create innovative and efficient
+                    solutions.
                   </p>
                 </div>
               )}
@@ -100,7 +102,7 @@ export const Banner = () => {
                     isVisible ? 'animate__animated animate__zoomIn' : ''
                   }
                 >
-                  <img src={headerImg} alt="Header Img" />
+                  <img src={undraw_programming} alt="Header Img" />
                 </div>
               )}
             </TrackVisibility>
