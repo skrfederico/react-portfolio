@@ -124,17 +124,12 @@ export const Projects = () => {
                             </Slider>
 
                             <div className="flex justify-center ccc">
-                              <img
-                                src={Illustration}
-                                className="w20rem ml-10"
-                              />
-
                               <div className=" teach_assistIntroHold">
                                 <p className=" capitalize teach_assistIntro">
                                   Teacher's assistant is an app designed to
                                   simplify lives of education professionals
                                   <ExternalLink
-                                    href="https://github.com/skrfederico"
+                                    href="https://github.com/skrfederico/teachers_assistant"
                                     className=" uppercase text-yellow-400 hover:text-yellow-500"
                                   >
                                     {' '}
