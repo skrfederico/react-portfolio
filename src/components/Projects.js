@@ -194,11 +194,6 @@ export const Projects = () => {
                             </Slider>
 
                             <div className="flex justify-center ccc">
-                              <img
-                                src={Illustration}
-                                className="w20rem ml-10"
-                              />
-
                               <div className=" ProjectIntroHold">
                                 <p className=" capitalize ProjectIntro">
                                   "DaMaFe movie theater, owned by Dawn, Matthew,
@@ -209,7 +204,7 @@ export const Projects = () => {
                                   with technologies such as MongoDB, Express,
                                   TailWind, JavaScript, brcryptjs, and JSX..{' '}
                                   <ExternalLink
-                                    href="https://github.com/skrfederico"
+                                    href="https://github.com/skrfederico/moviews_reviews"
                                     className="text-yellow-400 hover:text-yellow-500 uppercase"
                                   >
                                     {' '}
@@ -273,16 +268,11 @@ export const Projects = () => {
                             </Slider>
 
                             <div className="flex justify-center ccc">
-                              <img
-                                src={Illustration}
-                                className="w20rem ml-10"
-                              />
-
                               <div className=" projectIntroHold">
                                 <p className=" capitalize projectIntro">
                                   "Vlogger is my first CRUD app{' '}
                                   <ExternalLink
-                                    href="https://github.com/skrfederico"
+                                    href="https://github.com/skrfederico/plogger"
                                     className="text-yellow-400 hover:text-yellow-500 uppercase"
                                   >
                                     {' '}
