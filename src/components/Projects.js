@@ -5,9 +5,14 @@ import colorSharp2 from '../assets/img/color-sharp2.png'
 import 'animate.css'
 import TrackVisibility from 'react-on-screen'
 
-import ploggerIndex from '../assets/img/ploggerIndex.png'
-import ploggerForm from '../assets/img/ploggerForm.png'
-import ploggerPhonelog from '../assets/img/ploggerPhonelog.png'
+// import ploggerIndex from '../assets/img/ploggerIndex.png'
+// import ploggerForm from '../assets/img/ploggerForm.png'
+// import ploggerPhonelog from '../assets/img/ploggerPhonelog.png'
+
+import vloggerMain from '../assets/img/vloggerMain.png'
+import vloggerCreate from '../assets/img/vloggerCreate.png'
+import vloggerEdit from '../assets/img/vloggerEdit.png'
+import vloggerSearch from '../assets/img/vloggerSearch.png'
 
 import movieAppMovieTop from '../assets/img/movieAppMovieTop.png'
 import movieAppMovieBottom from '../assets/img/movieAppMovieBottom.png'
@@ -19,7 +24,7 @@ import teachAidAverages from '../assets/img/teachAidAverages.png'
 import teachAidReports from '../assets/img/teachAidReports.png'
 
 import Illustration from '../assets/img/try.png'
-import speechBubble from '../assets/img/image.png'
+// import speechBubble from '../assets/img/image.png'
 import github from '../assets/img/icons8-github.svg'
 import web from '../assets/img/web.png'
 
@@ -92,7 +97,7 @@ export const Projects = () => {
                         <Nav.Link eventKey="second">Movies Reviews</Nav.Link>
                       </Nav.Item>
                       <Nav.Item className="cursor-pointer">
-                        <Nav.Link eventKey="third">P(hone)LOGGER</Nav.Link>
+                        <Nav.Link eventKey="third">Vlogger</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content
@@ -135,14 +140,22 @@ export const Projects = () => {
                                     {' '}
                                     See more on my github{' '}
                                   </ExternalLink>{' '}
+                                  /{' '}
+                                  <ExternalLink
+                                    href=""
+                                    className="text-red-400 hover:text-red-500 uppercase"
+                                  >
+                                    {' '}
+                                    see more live{' '}
+                                  </ExternalLink>
                                   "
                                 </p>
                               </div>
                             </div>
 
-                            <div className="flex relative speechHold">
+                            {/* <div className="flex relative speechHold">
                               <img src={speechBubble} className="bubble" />
-                            </div>
+                            </div> */}
 
                             <ReactTooltip
                               anchorId="github"
@@ -156,7 +169,7 @@ export const Projects = () => {
                               content="live project"
                             />
 
-                            <div className="flex gap-6 relative bubbleContentHold">
+                            {/* <div className="flex gap-6 relative bubbleContentHold">
                               <ExternalLink href="https://github.com/skrfederico">
                                 <BsGithub
                                   className=" inline-block white text-3xl"
@@ -170,7 +183,7 @@ export const Projects = () => {
                                   id="live"
                                 />
                               </ExternalLink>
-                            </div>
+                            </div> */}
                           </div>
                         </Row>
                       </Tab.Pane>
@@ -210,14 +223,22 @@ export const Projects = () => {
                                     {' '}
                                     See more on my github{' '}
                                   </ExternalLink>
+                                  /{' '}
+                                  <ExternalLink
+                                    href="https://damafe-movies.netlify.app/"
+                                    className="text-red-400 hover:text-red-500 uppercase"
+                                  >
+                                    {' '}
+                                    see more live{' '}
+                                  </ExternalLink>
                                   "
                                 </p>
                               </div>
                             </div>
 
-                            <div className="flex relative speechHold">
+                            {/* <div className="flex relative speechHold">
                               <img src={speechBubble} className="bubble" />
-                            </div>
+                            </div> */}
 
                             <ReactTooltip
                               anchorId="github2"
@@ -231,7 +252,7 @@ export const Projects = () => {
                               content="live project"
                             />
 
-                            <div className="flex gap-6 relative bubbleContentHold">
+                            {/* <div className="flex gap-6 relative bubbleContentHold">
                               <ExternalLink href="https://github.com/skrfederico">
                                 <BsGithub
                                   className=" inline-block white text-3xl"
@@ -245,7 +266,7 @@ export const Projects = () => {
                                   id="live2"
                                 />
                               </ExternalLink>
-                            </div>
+                            </div> */}
                           </div>
                         </Row>
                       </Tab.Pane>
@@ -254,15 +275,19 @@ export const Projects = () => {
                           <div>
                             <Slider {...settings}>
                               <img
-                                src={ploggerIndex}
+                                src={vloggerMain}
                                 className=" rounded-xl mb-8"
                               />
                               <img
-                                src={ploggerForm}
+                                src={vloggerCreate}
                                 className=" rounded-xl mb-8"
                               />
                               <img
-                                src={ploggerPhonelog}
+                                src={vloggerEdit}
+                                className=" rounded-xl mb-8"
+                              />
+                              <img
+                                src={vloggerSearch}
                                 className=" rounded-xl mb-8"
                               />
                             </Slider>
@@ -270,22 +295,35 @@ export const Projects = () => {
                             <div className="flex justify-center ccc">
                               <div className=" projectIntroHold">
                                 <p className=" capitalize projectIntro">
-                                  "Vlogger is my first CRUD app{' '}
+                                  "Vlogger is my first CRUD app. Using Express
+                                  we can create, read, edit and delete logs of
+                                  the contents worked in every SEIR Flex class.
+                                  An additional search function in the Nav Bar
+                                  allows us to find references quickly using the
+                                  texts in the descriptions{' '}
                                   <ExternalLink
-                                    href="https://github.com/skrfederico/plogger"
+                                    href="https://github.com/skrfederico/vlogger"
                                     className="text-yellow-400 hover:text-yellow-500 uppercase"
                                   >
                                     {' '}
                                     See more on my github{' '}
+                                  </ExternalLink>
+                                  /{' '}
+                                  <ExternalLink
+                                    href="https://video-logger.herokuapp.com/vlogs"
+                                    className="text-red-400 hover:text-red-500 uppercase"
+                                  >
+                                    {' '}
+                                    see more live{' '}
                                   </ExternalLink>
                                   "
                                 </p>
                               </div>
                             </div>
 
-                            <div className="flex relative speechHold">
+                            {/* <div className="flex relative speechHold">
                               <img src={speechBubble} className="bubble" />
-                            </div>
+                            </div> */}
 
                             <ReactTooltip
                               anchorId="github3"
@@ -299,7 +337,7 @@ export const Projects = () => {
                               content="live project"
                             />
 
-                            <div className="flex gap-6 relative bubbleContentHold">
+                            {/* <div className="flex gap-6 relative bubbleContentHold">
                               <ExternalLink href="https://github.com/skrfederico/teachers_assistant">
                                 <BsGithub
                                   className=" inline-block white text-3xl"
@@ -313,7 +351,7 @@ export const Projects = () => {
                                   id="live3"
                                 />
                               </ExternalLink>
-                            </div>
+                            </div> */}
                           </div>
                         </Row>
                       </Tab.Pane>
