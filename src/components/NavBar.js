@@ -3,6 +3,7 @@ import { Navbar, Nav, Container } from 'react-bootstrap'
 import logo from '../assets/img/logo.svg'
 import Linkedin from '../assets/img/nav-icon1.svg'
 import github from '../assets/img/icons8-github.svg'
+import resume from '../assets/img/Federico_Skr.pdf'
 
 import { HashLink } from 'react-router-hash-link'
 import { BrowserRouter as Router } from 'react-router-dom'
@@ -71,6 +72,17 @@ export const NavBar = () => {
                 onClick={() => onUpdateActiveLink('projects')}
               >
                 Projects
+              </Nav.Link>
+              <Nav.Link
+                href={resume}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={
+                  activeLink === 'resume' ? 'active navbar-link' : 'navbar-link'
+                }
+                onClick={() => onUpdateActiveLink('resume')}
+              >
+                Resume
               </Nav.Link>
             </Nav>
 
