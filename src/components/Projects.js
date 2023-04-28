@@ -132,7 +132,14 @@ export const Projects = () => {
                               <div className=" teach_assistIntroHold">
                                 <p className=" capitalize teach_assistIntro">
                                   Teacher's assistant is an app designed to
-                                  simplify lives of education professionals
+                                  simplify lives of education professionals.
+                                  Create the groups you teach, add important
+                                  info about them and your students with their
+                                  profiles. Just by completing an assesment form
+                                  after each class you will give the platform
+                                  enough information to create automatic reports
+                                  which can be easily sent to parents with just
+                                  one click.
                                   <ExternalLink
                                     href="https://github.com/skrfederico/teachers_assistant"
                                     className=" uppercase text-yellow-400 hover:text-yellow-500"
@@ -142,7 +149,7 @@ export const Projects = () => {
                                   </ExternalLink>{' '}
                                   /{' '}
                                   <ExternalLink
-                                    href=""
+                                    href="https://seal-app-g96hp.ondigitalocean.app/"
                                     className="text-red-400 hover:text-red-500 uppercase"
                                   >
                                     {' '}
@@ -209,13 +216,13 @@ export const Projects = () => {
                             <div className="flex justify-center ccc">
                               <div className=" ProjectIntroHold">
                                 <p className=" capitalize ProjectIntro">
-                                  "DaMaFe movie theater, owned by Dawn, Matthew,
-                                  and Fede, is an online movie review platform
-                                  that enables users to create, read, update,
-                                  and delete movie reviews using a MERN stack
-                                  application with React. The platform is built
-                                  with technologies such as MongoDB, Express,
-                                  TailWind, JavaScript, brcryptjs, and JSX..{' '}
+                                  "DaMaFe movie theater is an online movie
+                                  review platform that enables users to create,
+                                  read, update, and delete movie reviews using a
+                                  MERN stack application with React. The
+                                  platform is built with technologies such as
+                                  MongoDB, Express, TailWind, JavaScript,
+                                  brcryptjs, and JSX...{' '}
                                   <ExternalLink
                                     href="https://github.com/skrfederico/moviews_reviews"
                                     className="text-yellow-400 hover:text-yellow-500 uppercase"
